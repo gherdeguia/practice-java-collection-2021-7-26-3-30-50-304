@@ -24,6 +24,9 @@ public class StreamReduce {
     }
 
     public int getTotalLength(List<String> words) {
-        throw new NotImplementedException();
+//        throw new NotImplementedException();
+        return words.stream()
+                .reduce("", (current, next) -> current + next)
+                .length();
     }
 }
