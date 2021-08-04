@@ -28,7 +28,7 @@ public class StreamFilter {
 
         return numbers
                 .stream()
-                .filter( number -> anotherNumbers.contains(number) )
+                .filter( number -> anotherNumbers.contains(number) ) //can also use anotherNumbers::contains
                 .collect(Collectors.toList());
 
         //throw new NotImplementedException();
